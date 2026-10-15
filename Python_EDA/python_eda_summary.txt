@@ -1,0 +1,88 @@
+NETFLIX CONTENT ANALYSIS
+========================================
+
+Total Records: 8807
+Total Columns: 12
+
+Column Names:
+show_id, type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, description
+
+Missing Values:
+show_id            0
+type               0
+title              0
+director        2634
+cast             825
+country          831
+date_added        10
+release_year       0
+rating             4
+duration           3
+listed_in          0
+description        0
+
+Duplicate Rows: 0
+
+Data Types:
+show_id                    str
+type                       str
+title                      str
+director                   str
+cast                       str
+country                    str
+date_added      datetime64[us]
+release_year             int64
+rating                     str
+duration                   str
+listed_in                  str
+description                str
+
+Summary Statistics:
+       show_id   type   title       director                cast        country                  date_added  release_year rating  duration                     listed_in                                                                                                                                                description
+count     8807   8807    8807           6173                7982           7976                        8797   8807.000000   8803      8804                          8807                                                                                                                                                       8807
+unique    8807      2    8804           4528                7692            748                         NaN           NaN     17       220                           514                                                                                                                                                       8775
+top         s1  Movie  15-Aug  Rajiv Chilaka  David Attenborough  United States                         NaN           NaN  TV-MA  1 Season  Dramas, International Movies  Paranormal activity at a lush, abandoned property alarms a group eager to redevelop the site, but the eerie events may not be as unearthly as they think.
+freq         1   6131       2             19                  19           2818                         NaN           NaN   3207      1793                           362                                                                                                                                                          4
+mean       NaN    NaN     NaN            NaN                 NaN            NaN  2019-05-17 05:59:08.436967   2014.180198    NaN       NaN                           NaN                                                                                                                                                        NaN
+min        NaN    NaN     NaN            NaN                 NaN            NaN         2008-01-01 00:00:00   1925.000000    NaN       NaN                           NaN                                                                                                                                                        NaN
+25%        NaN    NaN     NaN            NaN                 NaN            NaN         2018-04-06 00:00:00   2013.000000    NaN       NaN                           NaN                                                                                                                                                        NaN
+50%        NaN    NaN     NaN            NaN                 NaN            NaN         2019-07-02 00:00:00   2017.000000    NaN       NaN                           NaN                                                                                                                                                        NaN
+75%        NaN    NaN     NaN            NaN                 NaN            NaN         2020-08-19 00:00:00   2019.000000    NaN       NaN                           NaN                                                                                                                                                        NaN
+max        NaN    NaN     NaN            NaN                 NaN            NaN         2021-09-25 00:00:00   2021.000000    NaN       NaN                           NaN                                                                                                                                                        NaN
+std        NaN    NaN     NaN            NaN                 NaN            NaN                         NaN      8.819312    NaN       NaN                           NaN                                                                                                                                                        NaN
+
+Top 10 Countries:
+country
+United States     3690
+India             1046
+United Kingdom     806
+Canada             445
+France             393
+Japan              318
+Spain              232
+South Korea        231
+Germany            226
+Mexico             169
+
+Top 10 Genres:
+listed_in
+International Movies        2752
+Dramas                      2427
+Comedies                    1674
+International TV Shows      1351
+Documentaries                869
+Action & Adventure           859
+TV Dramas                    763
+Independent Movies           756
+Children & Family Movies     641
+Romantic Movies              616
+
+Content Type Distribution:
+type
+Movie      6131
+TV Show    2676
+
+Correlation Analysis:
+                  release_year  duration_minutes
+release_year          1.000000         -0.206285
+duration_minutes     -0.206285          1.000000
